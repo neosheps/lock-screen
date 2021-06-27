@@ -3,6 +3,7 @@ import { Container } from './components/Container'
 import { Keyboard } from './components/Keyboard'
 import { Info } from './components/Info'
 import { userPin, adminPin } from './constants'
+import { PinView } from './components/PinView'
 
 function App() {
   const [pin, setPin] = useState([])
@@ -44,7 +45,7 @@ function App() {
           <Info text={message} />
         ) : (
           <>
-            <p>Current pin: {pin}</p>
+            <PinView length={pin.length} />
             <Keyboard onEnter={pinHandler} />
           </>
         )}

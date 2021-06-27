@@ -1,2 +1,2 @@
-export const adminPin = 1111
-export const userPin = 2222
+export const adminPin = 1212
+export const userPin = 1234
