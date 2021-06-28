@@ -22,7 +22,7 @@ export function PinView({ length }) {
   return (
     <Container>
       {new Array(4).fill(null).map((_, i) => (
-        <Dot filled={i + 1 <= length} />
+        <Dot key={i} filled={i + 1 <= length} />
       ))}
     </Container>
   )
